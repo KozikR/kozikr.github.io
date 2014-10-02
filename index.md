@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Sorrel
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
@@ -13,17 +13,16 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 
 In `_config.yml` remember to specify your own data:
     
-    title : My Blog =)
+    title : Sorrel
     
     author :
-      name : Name Lastname
+      name : Rafał Kozik
       email : blah@email.test
-      github : username
-      twitter : username
+      github : KozikR
 
 The theme should reference these variables whenever needed.
     
-## Sample Posts
+## Posts:
 
 This blog contains sample posts which help stage pages and blog data.
 When you don't need the samples anymore just delete the `_posts/core-samples` folder.
