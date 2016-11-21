@@ -44,7 +44,7 @@ The scheme of circuit is shown in belowe figure:
 
 ![title](../images/post/2016-11-19-RC-circuit/RC.png)
 
-The input is of system is $u(t)$. The output $y(t)$ is voltage on capasitor. $R$ is resistance in Ohms and $C$ capacity in Farads. $q(t)$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
+The input is of system is $$u(t)$$. The output $$y(t)$$ is voltage on capasitor. $$R$$ is resistance in Ohms and $$C$$ capacity in Farads. $$q(t)$$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
 
 
 ```python
@@ -60,11 +60,11 @@ equations
 
 
 
-$$\left [ u{\left (t \right )} = R \frac{d}{d t} x{\left (t \right )} + \frac{1}{C} x{\left (t \right )}, \quad y{\left (t \right )} = \frac{1}{C} x{\left (t \right )}\right ]$$
+$$$$\left [ u{\left (t \right )} = R \frac{d}{d t} x{\left (t \right )} + \frac{1}{C} x{\left (t \right )}, \quad y{\left (t \right )} = \frac{1}{C} x{\left (t \right )}\right ]$$$$
 
 
 
-The we gen calculate Laplace transform of our equation. Simpy currently can not do that, so we performe it manualy. $G(s)$ will be transfer function of this system.
+The we gen calculate Laplace transform of our equation. Simpy currently can not do that, so we performe it manualy. $$G(s)$$ will be transfer function of this system.
 
 
 ```python
@@ -79,7 +79,7 @@ L_equations
 
 
 
-$$\left [ U{\left (s \right )} = R s X{\left (s \right )} + \frac{1}{C} X{\left (s \right )}, \quad Y{\left (s \right )} = \frac{1}{C} X{\left (s \right )}\right ]$$
+$$$$\left [ U{\left (s \right )} = R s X{\left (s \right )} + \frac{1}{C} X{\left (s \right )}, \quad Y{\left (s \right )} = \frac{1}{C} X{\left (s \right )}\right ]$$$$
 
 
 
@@ -95,7 +95,7 @@ G
 
 
 
-$$\frac{1}{C R s + 1}$$
+$$$$\frac{1}{C R s + 1}$$$$
 
 
 
@@ -112,7 +112,7 @@ G_RC
 
 
 
-$$\frac{1}{0.01 s + 1}$$
+$$$$\frac{1}{0.01 s + 1}$$$$
 
 
 
@@ -176,7 +176,7 @@ fig.set_ylabel('V')
 
 Experiment
 ----------
-Simple program for STM32F401 was write. It generate pwm signal and gather voltage from capacitor by 12 bit ADC with frequwncy $1~kHz$. Belowe photo show measurements set-up:
+Simple program for STM32F401 was write. It generate pwm signal and gather voltage from capacitor by 12 bit ADC with frequwncy $$1~kHz$$. Belowe photo show measurements set-up:
 
 ![title](../images/post/2016-11-19-RC-circuit/rc_foto.png)
 
@@ -219,11 +219,11 @@ MSE
 
 
 
-$$2.78395309908$$
+$$$$2.78395309908$$$$
 
 
 
-We could optimize value of $RC$ for best fit to data. I measured value of $R$ and got $101.3~k\Omega$, so this method could be used to obtain $C$.
+We could optimize value of $$RC$$ for best fit to data. I measured value of $$R$$ and got $$101.3~k\Omega$$, so this method could be used to obtain $$C$$.
 
 
 ```python
@@ -240,7 +240,7 @@ ErrorFunc(np.array([R_v*C_v]))
 
 
 
-$$2.78395309908$$
+$$$$2.78395309908$$$$
 
 
 
@@ -257,7 +257,7 @@ output = opt.least_squares(ErrorFunc, np.array([R_v*C_v]))
 
 
 
-Now it is possible to calculete exact value of $C$:
+Now it is possible to calculete exact value of $$C$$:
 
 
 ```python
@@ -267,11 +267,11 @@ output.x[0]/101300
 
 
 
-$$8.3646141698e-08$$
+$$$$8.3646141698e-08$$$$
 
 
 
-So the capacity is aobiut $83.6~nF$. Comparison of respons of simulation and data is shown belowe:
+So the capacity is aobiut $$83.6~nF$$. Comparison of respons of simulation and data is shown belowe:
 
 
 ```python
@@ -302,4 +302,4 @@ fig.set_ylabel('V')
 Summary
 ---------
 This notebook cover some interesting python features: symbolic calculations, simulation of the transfer functions and last but not list identification of simple, but real dynamic system. 
-I measure the capacity by multimeter and get value $89.3~nF$, so achived result is nod very good. But data from model rather good fit to data. Model was build on breadboard so there could be parasitic capacitance and resistance. 
+I measure the capacity by multimeter and get value $$89.3~nF$$, so achived result is nod very good. But data from model rather good fit to data. Model was build on breadboard so there could be parasitic capacitance and resistance. 
