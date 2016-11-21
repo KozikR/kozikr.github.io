@@ -44,7 +44,7 @@ The scheme of circuit is shown in belowe figure:
 
 ![title](../images/post/2016-11-19-RC-circuit/RC.png)
 
-The input is of system is \$$ u(t) $$. The output \$$ y(t) $$ is voltage on capasitor. \$$ R $$ is resistance in Ohms and \$$ C $$ capacity in Farads. $$q(t)$$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
+The input is of system is $$ u(t) $$. The output $$ y(t) $$ is voltage on capasitor. $$ R $$ is resistance in Ohms and $$ C $$ capacity in Farads. $$q(t)$$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
 
 
 ```python
@@ -60,7 +60,7 @@ equations
 
 
 
-$$$$\left [ u{\left (t \right )} = R \frac{d}{d t} x{\left (t \right )} + \frac{1}{C} x{\left (t \right )}, \quad y{\left (t \right )} = \frac{1}{C} x{\left (t \right )}\right ]$$$$
+$$ \left [ u{\left (t \right )} = R \frac{d}{d t} x{\left (t \right )} + \frac{1}{C} x{\left (t \right )}, \quad y{\left (t \right )} = \frac{1}{C} x{\left (t \right )}\right ]$$
 
 
 
@@ -79,7 +79,7 @@ L_equations
 
 
 
-$$$$\left [ U{\left (s \right )} = R s X{\left (s \right )} + \frac{1}{C} X{\left (s \right )}, \quad Y{\left (s \right )} = \frac{1}{C} X{\left (s \right )}\right ]$$$$
+$$\left [ U{\left (s \right )} = R s X{\left (s \right )} + \frac{1}{C} X{\left (s \right )}, \quad Y{\left (s \right )} = \frac{1}{C} X{\left (s \right )}\right ]$$
 
 
 
@@ -95,7 +95,7 @@ G
 
 
 
-$$$$\frac{1}{C R s + 1}$$$$
+$$\frac{1}{C R s + 1}$$
 
 
 
@@ -112,7 +112,7 @@ G_RC
 
 
 
-$$$$\frac{1}{0.01 s + 1}$$$$
+$$\frac{1}{0.01 s + 1}$$
 
 
 
@@ -219,7 +219,7 @@ MSE
 
 
 
-$$$$2.78395309908$$$$
+$$2.78395309908$$
 
 
 
@@ -240,7 +240,7 @@ ErrorFunc(np.array([R_v*C_v]))
 
 
 
-$$$$2.78395309908$$$$
+$$2.78395309908$$
 
 
 
@@ -267,7 +267,7 @@ output.x[0]/101300
 
 
 
-$$$$8.3646141698e-08$$$$
+$$8.3646141698e-08$$
 
 
 
