@@ -41,7 +41,9 @@ from IPython.display import Image
 Equations
 ---------
 The scheme of circuit is shown in belowe figure:
+
 ![title](../images/post/2016-11-19-RC-circuit/RC.png)
+
 The input is of system is $u(t)$. The output $y(t)$ is voltage on capasitor. $R$ is resistance in Ohms and $C$ capacity in Farads. $q(t)$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
 
 
@@ -146,7 +148,7 @@ fig.set_ylabel('y, V')
 
 
 
-![png](images\post\2016-11-19-RC\output_12_1.png)
+![png](../images/post/2016-11-19-RC-circuit/output_12_1.png)
 
 
 And last simulation - respons for square wave:
@@ -169,13 +171,15 @@ fig.set_ylabel('V')
 
 
 
-![png](images\post\2016-11-19-RC\output_14_1.png)
+![png](../images/post/2016-11-19-RC-circuit/output_14_1.png)
 
 
 Experiment
 ----------
 Simple program for STM32F401 was write. It generate pwm signal and gather voltage from capacitor by 12 bit ADC with frequwncy $1~kHz$. Belowe photo show measurements set-up:
-![title](images\post\2016-11-19-RC\rc_foto.png)
+
+![title](../images/post/2016-11-19-RC-circuit/rc_foto.png)
+
 Comparision beetween experimantal and simulated data is dhown in figure belowe:
 
 
@@ -201,7 +205,7 @@ fig.set_ylabel('V')
 
 
 
-![png](..\images\post\2016-11-19-RC-circuit\output_16_1.png)
+![png](../images/post/2016-11-19-RC-circuit/output_16_1.png)
 
 
 The mean squear error beetween simulation and data:
@@ -292,7 +296,7 @@ fig.set_ylabel('V')
 
 
 
-![png](..\images\post\2016-11-19-RC-circuit\output_25_1.png)
+![png](../images/post/2016-11-19-RC-circuit/output_25_1.png)
 
 
 Summary
