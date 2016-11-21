@@ -6,6 +6,7 @@ title: Simulation and identification of RC circut
 New small project: simulation and identification RC circuit in Python. Jupyter notebook could be found [here](https://github.com/KozikR/Simulation-and-identification-of-RC-circuit/blob/master/RC%20circuit.ipynb).
 First part was simulation. Then I used STM32discovery to catch some real data and identify  parameters. 
 
+
 First part of this post will by about simulating basic RC circuit. We start from differential equation and then calculate transfer function. Secound part will be comparing step response of iurs modeal and real RC-circuit.
 All simulation was done in Python. 
 
