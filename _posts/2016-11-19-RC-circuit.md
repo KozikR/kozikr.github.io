@@ -41,7 +41,7 @@ from IPython.display import Image
 Equations
 ---------
 The scheme of circuit is shown in belowe figure:
-![title](..\images\post\2016-11-19-RC-cricuit\RC.png)
+![title](../images/post/2016-11-19-RC-circuit/RC.png)
 The input is of system is $u(t)$. The output $y(t)$ is voltage on capasitor. $R$ is resistance in Ohms and $C$ capacity in Farads. $q(t)$ is the charge on capacitor. From Ohms and Kirchoffs laws we could get equations:
 
 
