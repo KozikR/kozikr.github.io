@@ -200,7 +200,7 @@ fig.set_ylabel('V')
 
 
 
-![png](images\post\2016-11-19-RC\output_16_1.png)
+![png](..\images\post\2016-11-19-RC-circuit\output_16_1.png)
 
 
 The mean squear error beetween simulation and data:
@@ -291,7 +291,7 @@ fig.set_ylabel('V')
 
 
 
-![png](images\post\2016-11-19-RC\output_25_1.png)
+![png](..\images\post\2016-11-19-RC-circuit\output_25_1.png)
 
 
 Summary
