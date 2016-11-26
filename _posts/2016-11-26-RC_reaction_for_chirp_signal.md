@@ -1,8 +1,10 @@
-
-RC circuit response for chirp signal
-=====================================
+---
+layout: post
+title: RC circuit response for chirp signal
+---
 
 This post presents next experiment with RC circuit. Response for chirp signal will be simulated and measured. Firstly chirp signal will be described. Then will be presented simulation and experiment.
+
 
 Chirp is a sinus signal that constantly change its frequency:
 
