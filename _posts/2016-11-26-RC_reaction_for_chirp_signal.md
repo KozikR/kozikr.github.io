@@ -4,13 +4,13 @@ title: RC circuit response for chirp signal
 ---
 
 This post presents next experiment with RC circuit. Response for chirp signal will be simulated and measured. Firstly chirp signal will be described. Then will be presented simulation and experiment.
-
+Jupyter notebook could be found [here](https://github.com/KozikR/RC_reaction_for_chirp_signal/blob/master/RC_reaction_for_chirp_signal.ipynb)
 
 Chirp is a sinus signal that constantly change its frequency:
 
 $$ u(t) = A \sin \left(  2 \pi \frac{\left( T-t \right) f_0 + t f_1}{T} t \right) $$
 
-where $A$ is amplitued, $T$ - is length of signal, $f_0$ is frequency at time 0, and $f_1$ at time $T$.
+where $ A $ is amplitued, $ T $ - is length of signal, $ f_0 $ is frequency at time 0, and $ f_1 $ at time $ T $.
 It is very useful for determining the Bode characteristic of dynamics system.
 
 
@@ -48,7 +48,7 @@ RC = 0.0085
 G = sig.TransferFunction(np.array([1]), np.array([RC, 1]))
 ```
 
-Then chirp signal was generated. Sampling frequency was choosen to $1\;kHz$ so maximum generated frequency is $ 500\;Hz$ (Nyquist frequency).
+Then chirp signal was generated. Sampling frequency was choosen to  $ 1\;kHz $  so maximum generated frequency is  $  500\;Hz $  (Nyquist frequency).
 
 
 ```python
@@ -69,7 +69,7 @@ u_int = u_int+0.5
 u_int = u_int.astype(int)
 ```
 
-In experimental set-up range of output voltage is beetween $0 \; V$ and $3.3 \; V$:
+In experimental set-up range of output voltage is beetween  $ 0 \; V $  and  $ 3.3 \; V $ :
 
 
 ```python
